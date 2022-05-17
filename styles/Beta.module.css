@@ -1,0 +1,14 @@
+.container {
+    background: #171923;
+    background-size: cover;
+    animation: fadeInAnimation ease .32s;
+      animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+      min-height: 100vh;
+      padding: 0 0.5rem;
+      display: flex;
+      color: rgb(214, 214, 214);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }

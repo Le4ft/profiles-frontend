@@ -1,0 +1,62 @@
+@import url('API.utils.css');
+
+.container {
+    background: #171923;
+    background-size: cover;
+    animation: fadeInAnimation ease .32s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    color: rgb(214, 214, 214);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+
+@keyframes uk-text-shadow-glitch{
+    0%{
+        text-shadow:none
+    }
+    25%{
+        text-shadow:-2px -2px 0 #f43482,2px 2px 0 #3234ff
+    }
+    50%{
+        text-shadow:2px -2px 0 #f43482,-2px 2px 0 #3234ff
+    }
+    75%{
+        text-shadow:-2px 2px 0 #f43482,2px -2px 0 #3234ff
+    }
+    100%{
+        text-shadow:2px 2px 0 #f43482,-2px -2px 0 #3234ff
+    }
+}
+
+@keyframes bs{
+    0%{
+        box-shadow:none
+    }
+    25%{
+        box-shadow:-2px -2px 0 #4299E1,2px 2px 0 #ED64A6
+    }
+    50%{
+        box-shadow:2px -2px 0 #4299E1,-2px 2px 0 #ED64A6
+    }
+    75%{
+        box-shadow:-2px 2px 0 #4299E1,2px -2px 0 #ED64A6
+    }
+    100%{
+        box-shadow:2px 2px 0 #4299E1,-2px -2px 0 #ED64A6
+    }
+}
+
+
+.shadow {
+    animation: uk-text-shadow-glitch .65s cubic-bezier(.25, .46, .45, .9399999999999999) both infinite;
+}
+
+.shadowB {
+    animation: bs .65s cubic-bezier(.25, .46, .45, .9399999999999999) both infinite;
+}

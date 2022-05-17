@@ -1,0 +1,98 @@
+@import url('API.utils.css');
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* background: url('https://cdn.loady.host/upload/admin/banner1.png'); */
+
+* { font-family: var(--font) !important}
+
+html,
+head,
+body {
+  background: var(--background);
+  box-sizing: border-box;
+}
+
+
+.container {
+  background: var(--background);
+  animation: fadeInAnimation ease .32s;
+	animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+	min-height: 100vh;
+	padding: 0 0.5rem;
+
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+}
+
+.forgotPassword {
+  color: rgb(221, 221, 221);
+  border: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  font-weight: normal;
+  margin-top: -3px;
+  margin-bottom: 5px;
+  margin-left: -14px;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .feature {
+    display: flex;
+    justify-content: center !important;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+  }
+
+  .featureIcon {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .featureDesc {
+    text-align: center;
+    position: relative;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .feature {
+    display: flex;
+    justify-content: center !important;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+  }
+
+  .featureIcon {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .featureDesc {
+    text-align: center;
+    position: relative;
+  }
+
+}
